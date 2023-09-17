@@ -26,5 +26,5 @@ cd portfolio-2023
 #  Build new docker image
 docker build -t portfolio-2023 .
 
-#  Start new docker container from updated portfolio-2023 image
-docker run --restart always -p 3050:3050 -e VIRTUAL_HOST=joshlehman.ca,www.joshlehman.ca -e VIRTUAL_PATH=/ --name=portfolio-2023 portfolio-2023
+#  Start new docker container from updated portfolio-2023 image, replace XX with your port # below example 3001
+docker run --restart always -p XXXX:XXXX -e VIRTUAL_HOST=joshlehman.ca,www.joshlehman.ca -e VIRTUAL_PATH=/ --name=portfolio-2023 portfolio-2023

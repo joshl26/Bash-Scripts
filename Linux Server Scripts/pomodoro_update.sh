@@ -26,5 +26,5 @@ cd pomodoro-app
 #  Build new docker image
 docker build -t pomodoro-app .
 
-#  Start new docker container from updated pomodoro-app image
-docker run --restart always -p 3051:3051 -e VIRTUAL_HOST=joshlehman.ca,www.joshlehman.ca -e VIRTUAL_PATH=/pomodor/ --name=pomodoro-app pomodoro-app
+#  Start new docker container from updated portfolio-2023 image, replace XX with your port # below example 3000
+docker run --restart always -p XXXX:XXXX -e VIRTUAL_HOST=joshlehman.ca,www.joshlehman.ca -e VIRTUAL_PATH=/pomodor/ --name=pomodoro-app pomodoro-app
